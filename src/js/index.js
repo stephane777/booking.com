@@ -1,5 +1,5 @@
-import '../main.scss'
 import _ from 'lodash'
+import '../scss/styles.scss'
 
 console.log(_.join(['Index', 'module', 'loaded'], ' '))
 

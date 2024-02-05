@@ -2,11 +2,7 @@ const path = require('path')
 const HtmlWEbpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: {
-        index: { import: './src/js/index.js', dependOn: 'shared' },
-        sum: { import: './src/js/sum.js', dependOn: 'shared' },
-        shared: 'lodash',
-    },
+    entry: './src/js/index.js',
     module: {
         rules: [
             {
@@ -16,10 +12,15 @@ module.exports = {
                     loader: 'babel-loader',
                 },
             },
+            {
+                mimetype: 'image/svg+xml',
+                scheme: 'data',
+                type: 'asset/resource',
+                generator: {
+                    filename: 'icons/[hash].svg',
+                },
+            },
         ],
-    },
-    devServer: {
-        static: './dist',
     },
     plugins: [new HtmlWEbpackPlugin({ template: './src/main.html' })],
     optimization: {
