@@ -1,7 +1,24 @@
 @import 'bootstrap/scss/bootstrap';
 
+:root {
+    --bc-primary: #003b95;
+}
+
 $body-color: light-grey;
 
 body {
     background-color: $body-color;
+}
+
+.bc {
+    background-color: var(--bc-primary);
+    color: white;
+}
+
+.country {
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/GB.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

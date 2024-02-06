@@ -13,21 +13,33 @@ module.exports = {
                 },
             },
             {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+            // {
+            //     test: /\.(png|jpg)$/,
+
+            //     loader: 'file-loader',
+            //     options: {
+            //         outputPath: '/',
+            //     },
+            // },
+            {
                 mimetype: 'image/svg+xml',
                 scheme: 'data',
                 type: 'asset/resource',
                 generator: {
-                    filename: 'icons/[hash].svg',
+                    filename: 'icons/[name][hash].svg',
                 },
             },
         ],
     },
     plugins: [new HtmlWEbpackPlugin({ template: './src/main.html' })],
-    optimization: {
-        splitChunks: {
-            chunks: 'all',
-        },
-    },
+    // optimization: {
+    //     splitChunks: {
+    //         chunks: 'all',
+    //     },
+    // },
     output: {
         filename: '[name].[contenthash].bundle.js',
         path: path.resolve(__dirname, 'dist'),
