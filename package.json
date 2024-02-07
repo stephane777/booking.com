@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "build": "webpack --config webpack.prod.js",
-        "dev": "NODE_ENV=production webpack-dev-server --open --config webpack.dev.js"
+        "dev": "NODE_ENV=production webpack-dev-server --open --config webpack.dev.js",
+        "sass:watch": "sass --watch --no-source-map ./src/scss/styles.scss dist/css/main.css"
     },
     "keywords": [],
     "author": "Stephane Candelas",
