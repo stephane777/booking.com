@@ -3,15 +3,18 @@ $primary: #003b95;
 // Import all of Bootstrap's CSS
 // $navbar-dark-color: #fff;
 // $navbar-dark-hover-color: #954d00;
-
+$navbar-dark-color: #fff;
 @import 'bootstrap/scss/bootstrap';
 
-topnav.a.hover {
+.topnav a.hover {
     &:hover {
         background-color: #3452a1;
     }
 }
 
+.topnav .navbar-toggler-icon {
+    color: white;
+}
 .bc {
     background-color: $primary;
     color: white;
