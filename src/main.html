@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking.com</title>
+
 </head>
 
 <body style="height: 100%; width: 100%">
@@ -35,49 +36,57 @@
                                 </svg>
 
                             </button>
-                            <button class="navbar-toggler hover" type="button" data-bs-toggle="collapse"
-                                data-bs-target="navbarSupportedContent" aria-expanded="false"
+                            <button class="navbar-toggler hover" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                                 aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon" style="height: 24px; width: 24px;"></span>
                             </button>
 
-                            </span>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                                aria-labelledby="offcanvasNavbar">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Booking.com</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
 
-                            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
-                                    <li class="nav-item">
-                                        <a href="#" class="btn btn-primary hover p-3" aria-current="page" href="#">
-                                            GBP
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="btn btn-primary hover p-3">
-                                            <div class="country rounded-4"></div>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="btn btn-primary hover p-3" href="#"><svg
-                                                class="bk-icon -streamline-question_mark_circle" height="24" width="24"
-                                                fill="white" viewBox="0 0 24 24" role="presentation" aria-hidden="true"
-                                                focusable="false">
-                                                <path
-                                                    d="M9.75 9a2.25 2.25 0 1 1 3 2.122 2.25 2.25 0 0 0-1.5 2.122v1.006a.75.75 0 0 0 1.5 0v-1.006c0-.318.2-.602.5-.708A3.75 3.75 0 1 0 8.25 9a.75.75 0 1 0 1.5 0zM12 16.5a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5zM22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z">
-                                                </path>
-                                            </svg></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="btn text-light hover p-3">List your property</a>
-                                    </li>
-                                    <li class="nav-item d-flex gap-1 align-items-center ms-3">
-                                        <a class="btn-sm btn btn-primary text-bg-light text-primary">
-                                            Register
-                                        </a>
-                                        <a class=" btn btn-sm btn-primary text-bg-light text-primary">
-                                            Sign in
-                                        </a>
-                                    </li>
-                                </ul>
+                                <div class="offcanvas-body flex-grow-0" >
+       
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                                        <li class="nav-item">
+                                            <a href="#" class="btn btn-primary hover p-3" aria-current="page" href="#">
+                                                GBP
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="btn btn-primary hover p-3">
+                                                <div class="country rounded-4"></div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="btn btn-primary hover p-3" href="#"><svg
+                                                    class="bk-icon -streamline-question_mark_circle" height="24"
+                                                    width="24" fill="white" viewBox="0 0 24 24" role="presentation"
+                                                    aria-hidden="true" focusable="false">
+                                                    <path
+                                                        d="M9.75 9a2.25 2.25 0 1 1 3 2.122 2.25 2.25 0 0 0-1.5 2.122v1.006a.75.75 0 0 0 1.5 0v-1.006c0-.318.2-.602.5-.708A3.75 3.75 0 1 0 8.25 9a.75.75 0 1 0 1.5 0zM12 16.5a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5zM22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z">
+                                                    </path>
+                                                </svg></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="btn text-light hover p-3">List your property</a>
+                                        </li>
+                                        <li class="nav-item d-flex gap-1 align-items-center ms-3">
+                                            <a class="btn-sm btn btn-primary text-bg-light text-primary">
+                                                Register
+                                            </a>
+                                            <a class=" btn btn-sm btn-primary text-bg-light text-primary">
+                                                Sign in
+                                            </a>
+                                        </li>
+                                    </ul>
 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -87,7 +96,8 @@
                     <div class="container-fluid">
                         <ul class="navbar-nav d-flex flex-row gap-1">
                             <li class="nav-item">
-                                <a href="#" class="active btn btn-primary hover rounded-5 px-lg-4 py-2" aria-current="page">
+                                <a href="#" class="active btn btn-primary hover rounded-5 px-lg-4 py-2"
+                                    aria-current="page">
                                     <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path fill="#fff"
                                             d="M2.75 12h18.5c.69 0 1.25.56 1.25 1.25V18l.75-.75H.75l.75.75v-4.75c0-.69.56-1.25 1.25-1.25zm0-1.5A2.75 2.75 0 0 0 0 13.25V18c0 .414.336.75.75.75h22.5A.75.75 0 0 0 24 18v-4.75a2.75 2.75 0 0 0-2.75-2.75H2.75zM0 18v3a.75.75 0 0 0 1.5 0v-3A.75.75 0 0 0 0 18zm22.5 0v3a.75.75 0 0 0 1.5 0v-3a.75.75 0 0 0-1.5 0zm-.75-6.75V4.5a2.25 2.25 0 0 0-2.25-2.25h-15A2.25 2.25 0 0 0 2.25 4.5v6.75a.75.75 0 0 0 1.5 0V4.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 0 1.5 0zm-13.25-3h7a.25.25 0 0 1 .25.25v2.75l.75-.75h-9l.75.75V8.5a.25.25 0 0 1 .25-.25zm0-1.5A1.75 1.75 0 0 0 6.75 8.5v2.75c0 .414.336.75.75.75h9a.75.75 0 0 0 .75-.75V8.5a1.75 1.75 0 0 0-1.75-1.75h-7z">
@@ -104,7 +114,7 @@
                                     </svg>
                                     Flight</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item d-none d-sm-block">
                                 <a href="#" class=" btn btn-primary hover rounded-5 px-lg-4 py-2">
                                     <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                         data-rtl-flip="true">
@@ -142,10 +152,15 @@
                                     Airport taxis</a>
                             </li>
                             <li class="nav-item d-lg-none">
-                                <a href="#" class="btn btn-primary hover px-4 py-2 d-flex flex-row align-items-center gap-1">
+                                <a href="#"
+                                    class="btn btn-primary hover px-4 py-2 d-flex flex-row align-items-center gap-1">
                                     More
-                                    <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 20.09a1.24 1.24 0 0 1-.88-.36L6 14.61a.75.75 0 1 1 1.06-1.06L12 18.49l4.94-4.94A.75.75 0 0 1 18 14.61l-5.12 5.12a1.24 1.24 0 0 1-.88.36zm6-9.46a.75.75 0 0 0 0-1.06l-5.12-5.11a1.24 1.24 0 0 0-1.754-.006l-.006.006L6 9.57a.75.75 0 0 0 0 1.06.74.74 0 0 0 1.06 0L12 5.7l4.94 4.93a.73.73 0 0 0 .53.22c.2 0 .39-.078.53-.22z"></path></svg>
-                                    </a>
+                                    <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="#fff"
+                                            d="M12 20.09a1.24 1.24 0 0 1-.88-.36L6 14.61a.75.75 0 1 1 1.06-1.06L12 18.49l4.94-4.94A.75.75 0 0 1 18 14.61l-5.12 5.12a1.24 1.24 0 0 1-.88.36zm6-9.46a.75.75 0 0 0 0-1.06l-5.12-5.11a1.24 1.24 0 0 0-1.754-.006l-.006.006L6 9.57a.75.75 0 0 0 0 1.06.74.74 0 0 0 1.06 0L12 5.7l4.94 4.93a.73.73 0 0 0 .53.22c.2 0 .39-.078.53-.22z">
+                                        </path>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </div>

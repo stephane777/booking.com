@@ -1,5 +1,6 @@
 import _ from 'lodash'
 import '../scss/styles.scss'
+import * as bootstrap from 'bootstrap'
 
 console.log(_.join(['Index', 'module', 'loaded'], ' '))
 
