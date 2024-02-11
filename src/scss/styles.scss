@@ -28,3 +28,21 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media (max-width: 992px) {
+    .offcanvas-body ul a {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .offcanvas-body ul li {
+        // display: flex;
+        // justify-content: center;
+        width: 100%;
+    }
+    .country {
+        justify-content: center;
+    }
+}
