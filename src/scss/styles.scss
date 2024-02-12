@@ -1,5 +1,10 @@
 @import './bootstrap.scss';
 
+html,
+height {
+    height: 100%;
+}
+
 .topnav a.hover,
 .topnav span.hover,
 .topnav button.hover,
@@ -57,6 +62,10 @@
     background-color: var(--bs-white);
 }
 
+.form-check-input {
+    width: 1.2rem;
+    height: 1.2rem;
+}
 @media (max-width: 992px) {
     .offcanvas-body ul a {
         background-color: transparent;
@@ -66,8 +75,6 @@
         justify-content: center;
     }
     .offcanvas-body ul li {
-        // display: flex;
-        // justify-content: center;
         width: 100%;
     }
     .country {

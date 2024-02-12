@@ -316,10 +316,10 @@
             </div>
         </div>
         <div
-            style="margin: 0 auto; max-width: 1110px"
+            style="margin: 0 auto; max-width: 1110px; height: 100%"
             class="position-relative"
         >
-            <div class="search-form-container container-lg">
+            <div class="search-form-container container-fluid">
                 <div class="row search-form">
                     <div class="col-lg gx-1 input-group">
                         <span class="input-group-text">
@@ -379,10 +379,64 @@
                             value="2 adults 0 children 1 room"
                         />
                     </div>
-                    <div class="col-auto gx-1">
-                        <button class="btn btn-primary btn-lg" type="submit">
+                    <div class="col-lg-auto gx-1">
+                        <button
+                            class="btn btn-primary btn-lg w-100"
+                            type="submit"
+                        >
                             Search
                         </button>
+                    </div>
+                </div>
+            </div>
+            <div class="search-form-details container-fluid">
+                <div class="container-fluid">
+                    <div class="row pt-lg-5 pt-9">
+                        <div class="col-auto">
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="home_apartment"
+                                    name="scales"
+                                    aria-label="I am looking for an entire home or apartment"
+                                />
+                                <label
+                                    for="home_apartment"
+                                    class="form-check-label xl-text"
+                                    >I'm looking for an entire home or
+                                    apartment</label
+                                >
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="work"
+                                    name="scales"
+                                    aria-label="I am travelling for work"
+                                />
+                                <label for="work" class="form-check-label"
+                                    >I'm travelling for work</label
+                                >
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="flights"
+                                    name="scales"
+                                    aria-label="I am looking for flights"
+                                />
+                                <label for="flights" class="form-check-label"
+                                    >I'm looking for flights</label
+                                >
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
