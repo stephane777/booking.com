@@ -5,6 +5,14 @@ height {
     height: 100%;
 }
 
+@mixin bg-image($size: 20px, $image: '../assets/GB.png') {
+    min-width: $size;
+    min-height: $size;
+    background-image: url($image);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .topnav a.hover,
 .topnav span.hover,
 .topnav button.hover,
@@ -27,13 +35,17 @@ height {
 }
 
 .country {
-    width: 20px;
-    height: 20px;
-    background-image: url('../assets/GB.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include bg-image;
 }
 
+.flight {
+    @include bg-image($size: 60px, $image: '../assets/flight.png');
+    // padding: 3rem;
+    object-fit: cover;
+}
+.newyear {
+    @include bg-image($size: 60px, $image: '../assets/newyear.jpeg');
+}
 .search-form {
     border: 3px solid rgb(255, 183, 0);
     background-color: rgb(255, 183, 0);
@@ -66,6 +78,25 @@ height {
     width: 1.2rem;
     height: 1.2rem;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #fff;
+    background-size: 50% 50%;
+    border-radius: 50%;
+    // opacity: 1.1;
+    // width: 8px;
+    // height: 8px;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // opacity: 0.5;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 0.8;
+}
+
 @media (max-width: 992px) {
     .offcanvas-body ul a {
         background-color: transparent;
@@ -80,4 +111,22 @@ height {
     .country {
         justify-content: center;
     }
+}
+
+@media (min-width: 576px) {
+    .carousel-inner {
+        display: flex;
+    }
+    .carousel-item {
+        margin-right: 0;
+        flex: 0 0 calc(100% / 2);
+        display: block;
+    }
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+.card {
+    margin: 0 0.5em;
 }

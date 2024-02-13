@@ -389,56 +389,164 @@
                     </div>
                 </div>
             </div>
-            <div class="search-form-details container-fluid">
-                <div class="container-fluid">
-                    <div class="row pt-lg-5 pt-9">
-                        <div class="col-auto">
-                            <div class="form-check">
-                                <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    id="home_apartment"
-                                    name="scales"
-                                    aria-label="I am looking for an entire home or apartment"
-                                />
-                                <label
-                                    for="home_apartment"
-                                    class="form-check-label xl-text"
-                                    >I'm looking for an entire home or
-                                    apartment</label
+            <div class="search-form-details container-fluid pb-4">
+                <!-- <div class="container-fluid"> -->
+                <div class="row pt-lg-5 pt-9">
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="home_apartment"
+                                name="scales"
+                                aria-label="I am looking for an entire home or apartment"
+                            />
+                            <label for="home_apartment" class="form-check-label"
+                                >I'm looking for an entire home or
+                                apartment</label
+                            >
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="work"
+                                name="scales"
+                                aria-label="I am travelling for work"
+                            />
+                            <label for="work" class="form-check-label"
+                                >I'm travelling for work</label
+                            >
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="flights"
+                                name="scales"
+                                aria-label="I am looking for flights"
+                            />
+                            <label for="flights" class="form-check-label"
+                                >I'm looking for flights</label
+                            >
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <h3 class="fw-bolder mb-1">Offers</h3>
+            <p>Promotions, deals and special offers for you</p>
+
+            <!-- CAROUSEL 1 -->
+            <div id="carouselExample" class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <h5 class="card-title">
+                                                Fly away to your dream holiday
+                                            </h5>
+                                            <p class="card-text">
+                                                Get inspired, compare and book
+                                                flights with more flexibility.
+                                            </p>
+                                            <a href="#" class="btn btn-primary"
+                                                >Search for flights</a
+                                            >
+                                        </div>
+                                        <div
+                                            class="col-4 p-0 d-flex align-items-center justify-content-center"
+                                        >
+                                            <div
+                                                class="flight w-75 h-75 mb-4"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body newyear">
+                                <h5 class="card-title text-white">
+                                    New year, new adventures
+                                </h5>
+                                <p class="card-text text-white">
+                                    Save 15% or more when you book and stay
+                                    before 1 April <br />
+                                    2024
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                    >Find Early 2024 Deals</a
                                 >
                             </div>
                         </div>
-                        <div class="col-auto">
-                            <div class="form-check">
-                                <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    id="work"
-                                    name="scales"
-                                    aria-label="I am travelling for work"
-                                />
-                                <label for="work" class="form-check-label"
-                                    >I'm travelling for work</label
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Take your longest holiday yet
+                                </h5>
+                                <p class="card-text">
+                                    Browse properties offering long-term stays,
+                                    many <br />
+                                    at reduced monthly rates.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                    >Find a stay</a
                                 >
                             </div>
                         </div>
-                        <div class="col-auto">
-                            <div class="form-check">
-                                <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    id="flights"
-                                    name="scales"
-                                    aria-label="I am looking for flights"
-                                />
-                                <label for="flights" class="form-check-label"
-                                    >I'm looking for flights</label
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 4</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                    >Go somewhere</a
                                 >
                             </div>
                         </div>
                     </div>
                 </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </body>
