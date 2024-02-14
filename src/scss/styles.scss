@@ -1,3 +1,4 @@
+@use './images.scss';
 @import './bootstrap.scss';
 
 html,
@@ -5,14 +6,27 @@ height {
     height: 100%;
 }
 
-@mixin bg-image($size: 20px, $image: '../assets/GB.png') {
-    min-width: $size;
-    min-height: $size;
-    background-image: url($image);
+// Extend/Inheritance
+%image-bg {
     background-repeat: no-repeat;
     background-size: cover;
 }
+// MIXINS
+@mixin bg-image($size: 20px, $image: '../assets/GB.png') {
+    @extend %image-bg;
+    min-width: $size;
+    min-height: $size;
+    background-image: url($image);
+}
 
+@mixin flags($size: 25px, $image: '../assets/uk_flag.png') {
+    @extend %image-bg;
+    width: $size;
+    height: $size;
+    background-image: url($image);
+}
+
+// TOPNAV
 .topnav a.hover,
 .topnav span.hover,
 .topnav button.hover,
@@ -20,6 +34,17 @@ height {
     &:hover {
         background-color: #3452a1;
     }
+}
+.country {
+    @include bg-image;
+}
+
+.flag_uk {
+    @include flags($size: 25px, $image: '../assets/uk_flag.png');
+}
+
+.flag_fr {
+    @include flags($size: 25px, $image: '../assets/fr_flag.png');
 }
 
 .navbar_category a.active {
@@ -29,23 +54,13 @@ height {
 .topnav .navbar-toggler-icon {
     color: white;
 }
+// HEADER
 .bc {
     background-color: $secondary;
     color: white;
 }
 
-.country {
-    @include bg-image;
-}
-
-.flight {
-    @include bg-image($size: 60px, $image: '../assets/flight.png');
-    // padding: 3rem;
-    object-fit: cover;
-}
-.newyear {
-    @include bg-image($size: 60px, $image: '../assets/newyear.jpeg');
-}
+// SEARCH FORM
 .search-form {
     border: 3px solid rgb(255, 183, 0);
     background-color: rgb(255, 183, 0);
@@ -79,17 +94,12 @@ height {
     height: 1.2rem;
 }
 
+// ALL CAROUSEL
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: #fff;
     background-size: 50% 50%;
     border-radius: 50%;
-    // opacity: 1.1;
-    // width: 8px;
-    // height: 8px;
-    // top: 50%;
-    // transform: translateY(-50%);
-    // opacity: 0.5;
 }
 
 .carousel-control-next,
@@ -97,6 +107,85 @@ height {
     opacity: 0.8;
 }
 
+.carousel-item {
+    margin-right: 0;
+    display: block;
+}
+
+.carousel-inner {
+    padding: 1em;
+
+    & > .carousel-item:first-child {
+        padding-left: 0 !important;
+    }
+    & > .carousel-item:last-child {
+        padding-right: 0 !important;
+    }
+}
+.card {
+    margin: 0 0.5em;
+}
+
+// CAROUSEL 1
+.flight {
+    @include bg-image($size: 60px, $image: '../assets/flight.png');
+    object-fit: cover;
+    width: 75%;
+    height: 75%;
+}
+.newyear {
+    @include bg-image($size: 60px, $image: '../assets/newyear.jpeg');
+}
+
+#carousel_1 {
+    & .carousel-item {
+        flex: 0 0 calc(100% / 2);
+    }
+    & .carousel-inner {
+        max-width: 1080px;
+        display: flex;
+    }
+    & .carousel-control-next {
+        right: -28px;
+    }
+    & .carousel-control-prev {
+        left: -60px;
+    }
+}
+
+// CAROUSEL 2
+#carousel_2 {
+    & .carousel-item {
+        flex: 0 0 calc(100% / 5);
+    }
+    & .carousel-inner {
+        max-width: 1080px;
+        display: flex;
+    }
+    & .carousel-control-next {
+        right: -40px;
+    }
+    & .carousel-control-prev {
+        left: -66px;
+    }
+}
+
+// Trending Destination
+.paris,
+.london,
+.manchester,
+.liverpool,
+.glasgow {
+    &:hover {
+        // box-shadow: inset 0 24px rgb(0 0 0 / 20%);
+        border: 1px solid #febb02;
+        cursor: pointer;
+    }
+    & h4 {
+        text-shadow: rgb(26, 26, 26) 1px 1px 1px;
+    }
+}
+// RESPONSIVENESS
 @media (max-width: 992px) {
     .offcanvas-body ul a {
         background-color: transparent;
@@ -111,22 +200,25 @@ height {
     .country {
         justify-content: center;
     }
-}
-
-@media (min-width: 576px) {
-    .carousel-inner {
-        display: flex;
+    .flight {
+        height: 100% !important;
+        width: 50% !important;
     }
-    .carousel-item {
-        margin-right: 0;
-        flex: 0 0 calc(100% / 2);
-        display: block;
+    #carousel_1 .carousel-item {
+        flex: 0 0 100%;
     }
 }
 
-.carousel-inner {
-    padding: 1em;
+@media (max-width: 780px) {
+    .flight {
+        height: 90% !important;
+        width: 82% !important;
+    }
 }
-.card {
-    margin: 0 0.5em;
+
+@media (max-width: 573px) {
+    .flight {
+        height: 50% !important;
+        width: 100% !important;
+    }
 }
