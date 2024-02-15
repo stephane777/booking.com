@@ -2,13 +2,20 @@ import '../scss/styles.scss'
 import * as bootstrap from 'bootstrap'
 
 document.addEventListener('DOMContentLoaded', (e) => {
-    ;['#carousel_1', '#carousel_2'].forEach((id) => {
+    ;['#carousel_1', '#carousel_2', '#carousel_3'].forEach((id) => {
         carousel(id)
     })
 })
 
 function carousel(id) {
-    const visibleCard = id === '#carousel_2' ? 4 : id === '#carousel_1' ? 2 : 2
+    const visibleCard =
+        id === '#carousel_3'
+            ? 6
+            : id === '#carousel_2'
+              ? 4
+              : id === '#carousel_1'
+                ? 2
+                : 2
     let carouselWidth = document.querySelector(
         id + ' .carousel-inner'
     ).scrollWidth

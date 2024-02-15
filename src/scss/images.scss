@@ -1,7 +1,7 @@
 // MIXINS
-@mixin bg-image($size: 20px, $image: '../assets/GB.png') {
-    min-width: $size;
-    min-height: $size;
+@mixin bg-image($width: 20px, $height: 20px, $image: '../assets/GB.png') {
+    min-width: $width;
+    min-height: $height;
     background-image: url($image);
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,132 +9,334 @@
 
 // carousel 2
 .hotels {
-    @include bg-image($size: 250px, $image: '../assets/hotels.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/hotels.jpeg'
+    );
     border-radius: 8px;
 }
 .apartments {
-    @include bg-image($size: 250px, $image: '../assets/apartments.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/apartments.jpeg'
+    );
     border-radius: 8px;
 }
 .resorts {
-    @include bg-image($size: 250px, $image: '../assets/resorts.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/resorts.jpeg'
+    );
     border-radius: 8px;
 }
 .villas {
-    @include bg-image($size: 250px, $image: '../assets/villas.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/villas.jpeg'
+    );
     border-radius: 8px;
 }
 .cabins {
-    @include bg-image($size: 250px, $image: '../assets/cabins.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/cabins.jpeg'
+    );
     border-radius: 8px;
 }
 .cottages {
-    @include bg-image($size: 250px, $image: '../assets/cottages.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/cottages.jpeg'
+    );
     border-radius: 8px;
 }
 
 .glamping {
-    @include bg-image($size: 250px, $image: '../assets/glamping.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/glamping.jpeg'
+    );
     border-radius: 8px;
 }
 .serviced_apartments {
     @include bg-image(
-        $size: 250px,
+        $width: 250px,
+        $height: 250px,
         $image: '../assets/serviced_apartment.jpeg'
     );
     border-radius: 8px;
 }
 
 .holiday_homes {
-    @include bg-image($size: 250px, $image: '../assets/holiday_homes.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/holiday_homes.jpeg'
+    );
     border-radius: 8px;
 }
 .guest_houses {
-    @include bg-image($size: 250px, $image: '../assets/guest_house.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/guest_house.jpeg'
+    );
     border-radius: 8px;
 }
 
 .hostels {
-    @include bg-image($size: 250px, $image: '../assets/hostels.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/hostels.jpeg'
+    );
     border-radius: 8px;
 }
 .motels {
-    @include bg-image($size: 250px, $image: '../assets/motels.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/motels.jpeg'
+    );
     border-radius: 8px;
 }
 
 .bnbs {
-    @include bg-image($size: 250px, $image: '../assets/bnbs.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/bnbs.jpeg'
+    );
     border-radius: 8px;
 }
 .ryokans {
-    @include bg-image($size: 250px, $image: '../assets/ryokans.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/ryokans.jpeg'
+    );
     border-radius: 8px;
 }
 
 .riads {
-    @include bg-image($size: 250px, $image: '../assets/riads.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/riads.jpeg'
+    );
     border-radius: 8px;
 }
 .holiday_park {
-    @include bg-image($size: 250px, $image: '../assets/holiday_park.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/holiday_park.jpeg'
+    );
     border-radius: 8px;
 }
 
 .homestays {
-    @include bg-image($size: 250px, $image: '../assets/homestays.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/homestays.jpeg'
+    );
     border-radius: 8px;
 }
 .campsites {
-    @include bg-image($size: 250px, $image: '../assets/campsites.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/campsites.jpeg'
+    );
     border-radius: 8px;
 }
 
 .country_house {
-    @include bg-image($size: 250px, $image: '../assets/country_house.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/country_house.jpeg'
+    );
     border-radius: 8px;
 }
 .farm_stays {
-    @include bg-image($size: 250px, $image: '../assets/farm_stays.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/farm_stays.jpeg'
+    );
     border-radius: 8px;
 }
 
 .boats {
-    @include bg-image($size: 250px, $image: '../assets/boats.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/boats.jpeg'
+    );
     border-radius: 8px;
 }
 .luxury_tents {
-    @include bg-image($size: 250px, $image: '../assets/luxury_tents.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/luxury_tents.jpeg'
+    );
     border-radius: 8px;
 }
 
 .self_catering {
-    @include bg-image($size: 250px, $image: '../assets/boats.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/boats.jpeg'
+    );
     border-radius: 8px;
 }
 .tiny_house {
-    @include bg-image($size: 250px, $image: '../assets/luxury_tents.jpeg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/luxury_tents.jpeg'
+    );
     border-radius: 8px;
 }
 
 // Trending destinations
 .london {
-    @include bg-image($size: 250px, $image: '../assets/london.jpg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/london.jpg'
+    );
     border-radius: 8px;
 }
 .manchester {
-    @include bg-image($size: 250px, $image: '../assets/manchester.jpg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/manchester.jpg'
+    );
     border-radius: 8px;
 }
 .liverpool {
-    @include bg-image($size: 250px, $image: '../assets/liverpool.jpg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/liverpool.jpg'
+    );
     border-radius: 8px;
 }
 .glasgow {
-    @include bg-image($size: 250px, $image: '../assets/glasgow.jpg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/glasgow.jpg'
+    );
     border-radius: 8px;
 }
 .paris {
-    @include bg-image($size: 250px, $image: '../assets/paris.jpg');
+    @include bg-image(
+        $width: 250px,
+        $height: 250px,
+        $image: '../assets/paris.jpg'
+    );
+    border-radius: 8px;
+}
+
+// Carousel 3
+.e_london {
+    @include bg-image(
+        $width: 170px,
+        $height: 136px,
+        $image: '../assets/e_london.jpg'
+    );
+    border-radius: 8px;
+}
+
+.e_edinburgh {
+    @include bg-image(
+        $width: 170px,
+        $height: 136px,
+        $image: '../assets/e_edinburgh.jpg'
+    );
+    border-radius: 8px;
+}
+
+.e_manchester {
+    @include bg-image(
+        $width: 170px,
+        $height: 136px,
+        $image: '../assets/e_manchester.jpg'
+    );
+    border-radius: 8px;
+}
+
+.e_lake_district {
+    @include bg-image(
+        $width: 170px,
+        $height: 136px,
+        $image: '../assets/e_lake_district.jpg'
+    );
+    border-radius: 8px;
+}
+
+.e_york {
+    @include bg-image(
+        $width: 170px,
+        $height: 136px,
+        $image: '../assets/e_york.jpg'
+    );
+    border-radius: 8px;
+}
+
+.e_scotland {
+    @include bg-image(
+        $width: 170px,
+        $height: 136px,
+        $image: '../assets/e_scotland.jpg'
+    );
+    border-radius: 8px;
+}
+
+.e_blackpool {
+    @include bg-image(
+        $width: 170px,
+        $height: 136px,
+        $image: '../assets/e_blackpool.jpg'
+    );
+    border-radius: 8px;
+}
+
+.e_belfast {
+    @include bg-image(
+        $width: 170px,
+        $height: 136px,
+        $image: '../assets/e_belfast.jpg'
+    );
+    border-radius: 8px;
+}
+.e_cornwall {
+    @include bg-image(
+        $width: 170px,
+        $height: 136px,
+        $image: '../assets/e_cornwall.jpg'
+    );
+    border-radius: 8px;
+}
+.e_england {
+    @include bg-image(
+        $width: 170px,
+        $height: 136px,
+        $image: '../assets/e_england.jpg'
+    );
     border-radius: 8px;
 }

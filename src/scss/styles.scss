@@ -12,10 +12,10 @@ height {
     background-size: cover;
 }
 // MIXINS
-@mixin bg-image($size: 20px, $image: '../assets/GB.png') {
+@mixin bg-image($width: 20px, $height: 20px, $image: '../assets/GB.png') {
     @extend %image-bg;
-    min-width: $size;
-    min-height: $size;
+    min-width: $width;
+    min-height: $height;
     background-image: url($image);
 }
 
@@ -126,13 +126,21 @@ height {
 
 // CAROUSEL 1
 .flight {
-    @include bg-image($size: 60px, $image: '../assets/flight.png');
+    @include bg-image(
+        $width: 60px,
+        $height: 60px,
+        $image: '../assets/flight.png'
+    );
     object-fit: cover;
     width: 75%;
     height: 75%;
 }
 .newyear {
-    @include bg-image($size: 60px, $image: '../assets/newyear.jpeg');
+    @include bg-image(
+        $width: 60px,
+        $height: 60px,
+        $image: '../assets/newyear.jpeg'
+    );
 }
 
 #carousel_1 {
@@ -183,6 +191,43 @@ height {
         text-shadow: rgb(26, 26, 26) 1px 1px 1px;
     }
 }
+
+// Carousel 3
+#carousel_3 {
+    & .carousel-item {
+        flex: 0 0 calc(100% / 6);
+        padding: 0 2px;
+    }
+    & .carousel-inner {
+        position: static;
+        max-width: 1080px;
+        display: flex;
+    }
+    & .carousel-control-next {
+        right: -78px;
+    }
+    & .carousel-control-prev {
+        left: -78px;
+    }
+}
+// Destination we love
+
+.dest_we_love {
+    & button.active {
+        background-color: rgba(0, 108, 228, 0.06);
+        color: $primary;
+    }
+    & button:hover {
+        color: $primary;
+        background-color: rgba(0, 108, 228, 0.06);
+    }
+}
+.dest_we_love_list {
+    & span {
+        font-size: 14px;
+    }
+}
+
 // RESPONSIVENESS
 @media (max-width: 992px) {
     .offcanvas-body ul a {
