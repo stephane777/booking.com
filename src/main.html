@@ -10,7 +10,7 @@
         <div class="bc">
             <div style="margin: 0 auto; max-width: 1110px">
                 <!-- TOPNAV-->
-                <div class="container" style="height: 124px">
+                <div class="container-fluid" style="height: 124px">
                     <nav
                         class="topnav navbar navbar-expand-lg"
                         data-bs-theme="dark"
@@ -160,7 +160,7 @@
                         class="navbar_category navbar navbar-expend-lg"
                         data-bs-theme="dark"
                     >
-                        <div class="container-fluid">
+                        <div class="container-fluid p-0">
                             <ul class="navbar-nav d-flex flex-row gap-1">
                                 <li class="nav-item">
                                     <a
@@ -303,7 +303,7 @@
                 </div>
                 <!-- FIND YOUR NEXT STAY-->
                 <div
-                    class="container d-flex flex-column justify-content-center"
+                    class="container-fluid d-flex flex-column justify-content-center p-0"
                     style="height: 240px"
                 >
                     <h1 class="display-4 fw-bold text px-3 m-0">
@@ -438,276 +438,291 @@
                 </div>
                 <!-- </div> -->
             </div>
-            <h3 class="fw-bolder mb-1">Offers</h3>
-            <p>Promotions, deals and special offers for you</p>
+            <div class="container-fluid">
+
+                <h3 class="fw-bolder mb-1">Offers</h3>
+                <p>Promotions, deals and special offers for you</p>
+            </div>
 
             <!-- CAROUSEL 1 -->
-            <div id="carousel_1" class="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <h5 class="card-title">
-                                                Fly away to your dream holiday
-                                            </h5>
-                                            <p class="card-text">
-                                                Get inspired, compare and book
-                                                flights with more flexibility.
-                                            </p>
-                                            <a href="#" class="btn btn-primary"
-                                                >Search for flights</a
+            <div class="container-fluid">
+
+                <div id="carousel_1" class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <h5 class="card-title">
+                                                    Fly away to your dream holiday
+                                                </h5>
+                                                <p class="card-text">
+                                                    Get inspired, compare and book
+                                                    flights with more flexibility.
+                                                </p>
+                                                <a href="#" class="btn btn-primary"
+                                                    >Search for flights</a
+                                                >
+                                            </div>
+                                            <div
+                                                class="col-4 p-0 d-flex align-items-center justify-content-center"
                                             >
-                                        </div>
-                                        <div
-                                            class="col-4 p-0 d-flex align-items-center justify-content-center"
-                                        >
-                                            <div class="flight mb-4"></div>
+                                                <div class="flight mb-4"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-body newyear">
-                                <h5 class="card-title text-white">
-                                    New year, new adventures
-                                </h5>
-                                <p class="card-text text-white">
-                                    Save 15% or more when you book and stay
-                                    before 1 April <br />
-                                    2024
-                                </p>
-                                <a href="#" class="btn btn-primary"
-                                    >Find Early 2024 Deals</a
-                                >
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-body newyear">
+                                    <h5 class="card-title text-white">
+                                        New year, new adventures
+                                    </h5>
+                                    <p class="card-text text-white">
+                                        Save 15% or more when you book and stay
+                                        before 1 April <br />
+                                        2024
+                                    </p>
+                                    <a href="#" class="btn btn-primary"
+                                        >Find Early 2024 Deals</a
+                                    >
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Take your longest holiday yet
-                                </h5>
-                                <p class="card-text">
-                                    Browse properties offering long-term stays,
-                                    many <br />
-                                    at reduced monthly rates.
-                                </p>
-                                <a href="#" class="btn btn-primary"
-                                    >Find a stay</a
-                                >
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Take your longest holiday yet
+                                    </h5>
+                                    <p class="card-text">
+                                        Browse properties offering long-term stays,
+                                        many <br />
+                                        at reduced monthly rates.
+                                    </p>
+                                    <a href="#" class="btn btn-primary"
+                                        >Find a stay</a
+                                    >
+                                </div>
                             </div>
                         </div>
+                       
                     </div>
-                   
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carousel_1"
+                        data-bs-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carousel_1"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carousel_1"
-                    data-bs-slide="prev"
-                >
-                    <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carousel_1"
-                    data-bs-slide="next"
-                >
-                    <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-            <h3 class="fw-bolder mt-5 mb-2">Browse by property type</h3>
+            <div class="container-fluid">
+
+                <h3 class="fw-bolder mt-5 mb-2">Browse by property type</h3>
+            </div>
 
             <!-- Carousel 2-->
-            <div id="carousel_2" class="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item  px-2 active " >
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="hotels"></div>
-                            <span class="fw-bold"/>Hotels</span>
-                        </div>
-                    </div> 
-                    <div class="carousel-item px-2 ">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="apartments"></div>
-                            <span class="fw-bold"/>Apartments</span>
-                        </div>
-                    </div>
-                    <div class="carousel-item px-2 ">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="resorts"></div>
-                            <span class="fw-bold"/>Resorts</span>
-                        </div>
-                    </div>
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="villas"></div>
-                            <span class="fw-bold"/>Villas</span>
-                        </div>
-                    </div>
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="cabins"></div>
-                            <span class="fw-bold"/>Cabins</span>
-                        </div>
-                    </div>
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="cottages"></div>
-                            <span class="fw-bold"/>Cottages</span>
-                        </div>
-                    </div>
+            <div class="container-fluid">
 
-                    <div class="carousel-item px-2" >
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="glamping"></div>
-                            <span class="fw-bold"/>Glamping</span>
+                <div id="carousel_2" class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item  px-2 active " >
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="hotels"></div>
+                                <span class="fw-bold"/>Hotels</span>
+                            </div>
+                        </div> 
+                        <div class="carousel-item px-2 ">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="apartments"></div>
+                                <span class="fw-bold"/>Apartments</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="serviced_apartments"></div>
-                            <span class="fw-bold"/>Serviced apartments</span>
+                        <div class="carousel-item px-2 ">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="resorts"></div>
+                                <span class="fw-bold"/>Resorts</span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="holiday_homes"></div>
-                            <span class="fw-bold"/>Holiday Homes</span>
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="villas"></div>
+                                <span class="fw-bold"/>Villas</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="guest_houses"></div>
-                            <span class="fw-bold"/>Guest Houses</span>
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="cabins"></div>
+                                <span class="fw-bold"/>Cabins</span>
+                            </div>
                         </div>
-                    </div>
-
-
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="hostels"></div>
-                            <span class="fw-bold"/>Hostels</span>
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="cottages"></div>
+                                <span class="fw-bold"/>Cottages</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="motels"></div>
-                            <span class="fw-bold"/>Motels</span>
+    
+                        <div class="carousel-item px-2" >
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="glamping"></div>
+                                <span class="fw-bold"/>Glamping</span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="bnbs"></div>
-                            <span class="fw-bold"/>B&Bs</span>
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="serviced_apartments"></div>
+                                <span class="fw-bold"/>Serviced apartments</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="ryokans"></div>
-                            <span class="fw-bold"/>Ryokans</span>
+    
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="holiday_homes"></div>
+                                <span class="fw-bold"/>Holiday Homes</span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="riads"></div>
-                            <span class="fw-bold"/>Riads</span>
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="guest_houses"></div>
+                                <span class="fw-bold"/>Guest Houses</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="holiday_park"></div>
-                            <span class="fw-bold"/>Holiday parks</span>
+    
+    
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="hostels"></div>
+                                <span class="fw-bold"/>Hostels</span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="homestays"></div>
-                            <span class="fw-bold"/>Homestays</span>
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="motels"></div>
+                                <span class="fw-bold"/>Motels</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="campsites"></div>
-                            <span class="fw-bold"/>Campsites</span>
+    
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="bnbs"></div>
+                                <span class="fw-bold"/>B&Bs</span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="country_house"></div>
-                            <span class="fw-bold"/>Country Houses</span>
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="ryokans"></div>
+                                <span class="fw-bold"/>Ryokans</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="farm_stays"></div>
-                            <span class="fw-bold"/>Farm stays</span>
+    
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="riads"></div>
+                                <span class="fw-bold"/>Riads</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="boats"></div>
-                            <span class="fw-bold"/>Boats</span>
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="holiday_park"></div>
+                                <span class="fw-bold"/>Holiday parks</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item px-2">
-                        <div class="d-flex flex-column align-content-start">
-                            <div class="luxury_tents"></div>
-                            <span class="fw-bold"/>Luxury tents</span>
+    
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="homestays"></div>
+                                <span class="fw-bold"/>Homestays</span>
+                            </div>
                         </div>
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="campsites"></div>
+                                <span class="fw-bold"/>Campsites</span>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="country_house"></div>
+                                <span class="fw-bold"/>Country Houses</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="farm_stays"></div>
+                                <span class="fw-bold"/>Farm stays</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="boats"></div>
+                                <span class="fw-bold"/>Boats</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-2">
+                            <div class="d-flex flex-column align-content-start">
+                                <div class="luxury_tents"></div>
+                                <span class="fw-bold"/>Luxury tents</span>
+                            </div>
+                        </div>
+    
+    
+    
                     </div>
-
-
-
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carousel_2"
+                        data-bs-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carousel_2"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carousel_2"
-                    data-bs-slide="prev"
-                >
-                    <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carousel_2"
-                    data-bs-slide="next"
-                >
-                    <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-            <h3 class="fw-bolder mb-1 mt-5">Trending destinations</h3>
-            <p>Most popular choices for travellers from the United Kingdom</p>
+            <div class="container-fluid">
+
+                <h3 class="fw-bolder mb-1 mt-5">Trending destinations</h3>
+                <p>Most popular choices for travellers from the United Kingdom</p>
+            </div>
             <div class="container-fluid">
                 <div class="row g-2">
                     <div class="col-6   rounded-4 ">
@@ -749,7 +764,7 @@
                         </div>
                     </div>
                     <div class="col-4   rounded-4">
-                        <div class="paris p-4 opacity-150">
+                        <div class="paris p-4">
                             <div class=" d-flex align-items-center gap-1">
                                 <h4 class="fw-bolder text-white m-0">Paris</h4>
                                 <div class="flag_fr"></div>
