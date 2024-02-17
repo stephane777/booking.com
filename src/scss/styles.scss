@@ -7,23 +7,18 @@ height {
 }
 
 // Extend/Inheritance
-%image-bg {
-    background-repeat: no-repeat;
-    background-size: cover;
+%flag {
+    width: 25px;
+    height: fit-content;
 }
+
 // MIXINS
 @mixin bg-image($width: 20px, $height: 20px, $image: '../assets/GB.png') {
-    @extend %image-bg;
     min-width: $width;
     min-height: $height;
     background-image: url($image);
-}
-
-@mixin flags($size: 25px, $image: '../assets/uk_flag.png') {
-    @extend %image-bg;
-    width: $size;
-    height: $size;
-    background-image: url($image);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 // TOPNAV
@@ -35,16 +30,10 @@ height {
         background-color: #3452a1;
     }
 }
-.country {
-    @include bg-image;
-}
-
-.flag_uk {
-    @include flags($size: 25px, $image: '../assets/uk_flag.png');
-}
-
+.country,
+.flag_uk,
 .flag_fr {
-    @include flags($size: 25px, $image: '../assets/fr_flag.png');
+    @extend %flag;
 }
 
 .navbar_category a.active {
@@ -126,15 +115,10 @@ height {
 
 // CAROUSEL 1
 .flight {
-    @include bg-image(
-        $width: 60px,
-        $height: 60px,
-        $image: '../assets/flight.png'
-    );
-    object-fit: cover;
     width: 75%;
     height: 75%;
 }
+
 .newyear {
     @include bg-image(
         $width: 60px,
