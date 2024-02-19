@@ -54,15 +54,15 @@ height {
     border: 3px solid rgb(255, 183, 0);
     background-color: rgb(255, 183, 0);
     border-radius: 8px;
-    & input,
-    & button {
+    input,
+    button {
         height: 54px;
     }
-    & svg {
+    svg {
         height: 20px;
         width: 20px;
     }
-    & input {
+    input {
         font-size: 1rem;
         padding-left: 0.4rem;
     }
@@ -128,34 +128,34 @@ height {
 }
 
 #carousel_1 {
-    & .carousel-item {
+    .carousel-item {
         flex: 0 0 calc(100% / 2);
     }
-    & .carousel-inner {
+    .carousel-inner {
         max-width: 1080px;
         display: flex;
     }
-    & .carousel-control-next {
+    .carousel-control-next {
         right: -67px;
     }
-    & .carousel-control-prev {
+    .carousel-control-prev {
         left: -72px;
     }
 }
 
 // CAROUSEL 2
 #carousel_2 {
-    & .carousel-item {
+    .carousel-item {
         flex: 0 0 calc(100% / 4);
     }
-    & .carousel-inner {
+    .carousel-inner {
         max-width: 1080px;
         display: flex;
     }
-    & .carousel-control-next {
+    .carousel-control-next {
         right: -69px;
     }
-    & .carousel-control-prev {
+    .carousel-control-prev {
         left: -85px;
     }
 }
@@ -171,43 +171,43 @@ height {
         border: 1px solid #febb02;
         cursor: pointer;
     }
-    & h4 {
+    h4 {
         text-shadow: rgb(26, 26, 26) 1px 1px 1px;
     }
 }
 
 // Carousel 3
 #carousel_3 {
-    & .carousel-item {
+    .carousel-item {
         flex: 0 0 calc(100% / 6);
         padding: 0 2px;
     }
-    & .carousel-inner {
+    .carousel-inner {
         position: static;
         max-width: 1080px;
         display: flex;
     }
-    & .carousel-control-next {
+    .carousel-control-next {
         right: -78px;
     }
-    & .carousel-control-prev {
+    .carousel-control-prev {
         left: -78px;
     }
 }
 // Destination we love
 
 .dest_we_love {
-    & button.active {
+    button.active {
         background-color: rgba(0, 108, 228, 0.06);
         color: $primary;
     }
-    & button:hover {
+    button:hover {
         color: $primary;
         background-color: rgba(0, 108, 228, 0.06);
     }
 }
 .dest_we_love_list {
-    & span {
+    span {
         font-size: 14px;
     }
 }
@@ -218,7 +218,7 @@ height {
     background-color: rgb(0, 34, 79);
     color: white;
     padding: 50px 0;
-    & input {
+    input {
         width: 350px;
     }
 }
@@ -232,25 +232,25 @@ height {
     & > div > button:hover {
         background-color: rgba(255, 255, 255, 0.2);
     }
-    & ul {
+    ul {
         margin-top: 0.8rem;
         border-top: 1px solid white;
     }
-    & ul button:hover {
+    ul button:hover {
         background-color: #003580;
     }
 }
 .all_topics {
-    & button {
+    button {
         color: #006ce4;
     }
-    & button:hover {
+    button:hover {
         color: #bc5b01;
     }
 }
 
 .logos {
-    & img {
+    img {
         height: 26px;
         width: fit-content;
         overflow: clip;
