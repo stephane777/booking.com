@@ -2,7 +2,7 @@
 
 ### Description :
 
-The purpose of this project was meant to be a quick practice of the new release of Bootstrap 5.3
+The purpose of this project was meant to be a quick overview of the new release of Bootstrap 5.3
 and refresh my sass skills as [styled components](https://styled-components.com/) was mainly used professionally.
 
 This project only use Bootstrap classes & components directly added in `./src/main.html` thus all path in `image src tag` won't work due to webpack template loader, more information here [HTML template using &lt;img src='path' /&gt; won\'t work](https://github.com/jantimon/html-webpack-plugin/issues/1557)
