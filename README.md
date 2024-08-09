@@ -1,4 +1,4 @@
-## booking.com clone
+## Booking.com clone
 
 ### Description :
 
