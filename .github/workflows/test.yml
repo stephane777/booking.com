@@ -1,0 +1,10 @@
+name: deploy workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print test
+        run: echo "Hello test"
+      - name: Print another test
+        run: echo "Last test"
