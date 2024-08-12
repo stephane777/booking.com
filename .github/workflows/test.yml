@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print test
-        run: echo "Hello test"
-      - name: Print another test
-        run: echo "Last test"
+        run: |
+          echo "Hello test"
+          echo "Second test"
+          echo "Third test"
