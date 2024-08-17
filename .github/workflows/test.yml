@@ -7,5 +7,7 @@ jobs:
       - name: Print test
         run: |
           echo "Hello test"
-          echo "Second test"
-          echo "Third test"
+          echo "name of the action: ${{ github.action}}"
+          echo "job id: ${{ github.job}}"
+          echo "workflow: ${{ github.workflow}}"
+          echo "runner name: ${{ runner.name}}-${{runner.os}}"
